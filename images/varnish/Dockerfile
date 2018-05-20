@@ -17,7 +17,7 @@ ENV VARNISHD_PARAMS -a :8080 -p default_ttl=3600 -p default_grace=3600
 
 CMD /start.sh
 
-RUN usermod -a -G sudo geek
+RUN usermod -a -G root varnish
 USER varnish
 
 EXPOSE 8080
