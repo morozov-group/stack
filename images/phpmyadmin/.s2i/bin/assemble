@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+mkdir -p /etc/phpmyadmin
+chmod og+wr /etc/phpmyadmin
+
 echo "Cloning"
 git clone git@github.com:phpmyadmin/phpmyadmin.git
 
@@ -10,4 +13,5 @@ echo "Configuration"
 wget https://raw.githubusercontent.com/phpmyadmin/docker/master/etc/phpmyadmin/config.inc.php
 
 cd ../
+
 
