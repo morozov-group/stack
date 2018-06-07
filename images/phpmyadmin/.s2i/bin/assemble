@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+echo "Cloning"
+git clone git@github.com/phpmyadmin/phpmyadmin.git
+
+cd phpmyadmin
+source ${STI_SCRIPTS_PATH}/assemble
+cd ../
+
+
