@@ -1,11 +1,11 @@
 #!/bin/sh
-if [ ! -f $HOME/config.secret.inc.php ] ; then
-    cat > $HOME/config.secret.inc.php <<EOT
+if [ ! -f $HOME/config/config.secret.inc.php ] ; then
+    cat > $HOME/config/config.secret.inc.php <<EOT
 <?php
 \$cfg['blowfish_secret'] = '$(tr -dc 'a-zA-Z0-9~!@#$%^&*_()+}{?></";.,[]=-' < /dev/urandom | fold -w 32 | head -n 1)';
 EOT
 fi
 
-if [ ! -f $HOME/config.user.inc.php ] ; then
-  touch $HOME/config.user.inc.php
+if [ ! -f $HOME/config/config.user.inc.php ] ; then
+  touch $HOME/config/config.user.inc.php
 fi

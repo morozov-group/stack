@@ -7,12 +7,14 @@ php -r "unlink('composer-setup.php');"
 
 php composer.phar create-project phpmyadmin/phpmyadmin
 
+mkdir ./config && chmod -R go+rw ./config
+
 cd phpmyadmin
 source ${STI_SCRIPTS_PATH}/assemble
 
 echo "Configuration"
 curl https://raw.githubusercontent.com/phpmyadmin/docker/master/etc/phpmyadmin/config.inc.php | \
-  sed "s#/etc/phpmyadmin#$HOME#g" > config.inc.php
+  sed "s#/etc/phpmyadmin#$HOME/config#g" > config.inc.php
 
 cd ../
 
