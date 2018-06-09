@@ -9,3 +9,5 @@ fi
 if [ ! -f $HOME/config/config.user.inc.php ] ; then
   touch $HOME/config/config.user.inc.php
 fi
+
+source ${STI_SCRIPTS_PATH}/run
