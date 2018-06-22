@@ -15,12 +15,11 @@ Set of docker images and configurations to deploy Magento 2 demo project in Open
 
 **ACME SSL certificate automations** are done via [cert-manager](https://cert-manager.readthedocs.io/en/latest/getting-started/2-installing.html)
 
-## Shared storage is based on NFS storage
+## Media/Var storage
 
 Cornerstone for matching with for Volume Claims [StorageClass](https://stackoverflow.com/questions/44120612/kubernetes-pvc-not-binding-the-nfs-pv) 
 
 Original NFS service to share storage [Here](https://github.com/kubernetes/examples/tree/master/staging/volumes/nfs).
-
 
 ## Regular stack
 
