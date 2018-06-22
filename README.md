@@ -1,27 +1,33 @@
 # Magento 2 Stack for Kubernetes/Openshift
 
-This replository contains everything need to deploy Magento 2 Stack with best possible performance.
+This replository contains refrences to everything need to deploy Magento 2 Stack with best possible performance.
 Set of docker images and configurations to deploy Magento 2 demo project in Openshift.
 
 ## For Openshift
 
-**HTTP/2 offload** is none by NGINX [Origin router](https://github.com/openshift/origin/tree/master/images/router/nginx)
+**SSL offload with HTTP/2** is done by NGINX [Origin router](https://github.com/openshift/origin/tree/master/images/router/nginx)
 
 **ACME SSL certicate automations** are done via  [openshift-acme](https://github.com/tnozicka/openshift-acme/tree/master/deploy/letsencrypt-live/cluster-wide)
 
 ## For GKE
 
-TBD
+**SSL offload with HTTP/2** is done by regular ingress.
+
+**ACME SSL certicate automations** are done via [cert-manager](https://cert-manager.readthedocs.io/en/latest/getting-started/2-installing.html)
 
 ## Regular stack
-Varnish - 6.0.0 Image config [Source for Image](https://github.com/morozov-group/stack/tree/master/images/varnish)
 
-PHP from Magento 2 - Source to image for Magento is based on following patched verion of image. [Source for Image](https://github.com/morozov-group/s2i-php-container/tree/master/7.1)
+**Varnish** - 6.0.0 Image config [Source for Image](https://github.com/morozov-group/stack/tree/master/images/varnish)
 
-Redis - docker hub.
+**PHP 7.1 from Magento 2** - Source to image for Magento is based on following patched verion of image. [Source for Image](https://github.com/morozov-group/s2i-php-container/tree/master/7.1)
 
-MySQL/Percona - docker hub.
+**Redis** - session storage and cache storage from docker hub.
 
-PHPMyAdmin - here source to Image configuration.[Source2image](https://github.com/morozov-group/stack/tree/master/images/phpmyadmin/.s2i/bin)
+**MySQL/Percona** - master database from docker hub.
 
-Elasticsearch 5.x compatible with Elastic Suite.[Source for Image](https://github.com/morozov-group/stack/tree/master/images/elasticsearch)
+**Elasticsearch 5.x** compatible with Elastic Suite.[Source for Image](https://github.com/morozov-group/stack/tree/master/images/elasticsearch)
+Includes 
+
+## Usefull tools 
+
+**PHPMyAdmin** - here source to Image configuration.[Source2image](https://github.com/morozov-group/stack/tree/master/images/phpmyadmin/.s2i/bin)
