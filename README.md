@@ -7,13 +7,13 @@ Set of docker images and configurations to deploy Magento 2 demo project in Open
 
 **SSL offload with HTTP/2** is done by NGINX [Origin router](https://github.com/openshift/origin/tree/master/images/router/nginx)
 
-**ACME SSL certicate automations** are done via  [openshift-acme](https://github.com/tnozicka/openshift-acme/tree/master/deploy/letsencrypt-live/cluster-wide)
+**ACME SSL certificate automations** are done via  [openshift-acme](https://github.com/tnozicka/openshift-acme/tree/master/deploy/letsencrypt-live/cluster-wide)
 
 ## For GKE
 
 **SSL offload with HTTP/2** is done by regular ingress.
 
-**ACME SSL certicate automations** are done via [cert-manager](https://cert-manager.readthedocs.io/en/latest/getting-started/2-installing.html)
+**ACME SSL certificate automations** are done via [cert-manager](https://cert-manager.readthedocs.io/en/latest/getting-started/2-installing.html)
 
 ## Regular stack
 
