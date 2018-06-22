@@ -1,7 +1,6 @@
 # Magento 2 Stack for Kubernetes/Openshift
 
-This replository contains refrences to everything need to deploy Magento 2 Stack with best possible performance.
-Set of docker images and configurations to deploy Magento 2 demo project in Openshift.
+This repository contains references to everything need to deploy Magento 2 Stack with best possible performance. Set of docker images and configurations to deploy Magento 2 demo project in Openshift/GKE.
 
 ## For Openshift
 
