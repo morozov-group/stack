@@ -25,9 +25,10 @@ Set of docker images and configurations to deploy Magento 2 demo project in Open
 
 **MySQL/Percona** - master database from docker hub.
 
-**Elasticsearch 5.x** compatible with Elastic Suite.[Source for Image](https://github.com/morozov-group/stack/tree/master/images/elasticsearch)
-Includes 
 
-## Usefull tools 
+## Usefull Extras 
 
-**PHPMyAdmin** - here source to Image configuration.[Source2image](https://github.com/morozov-group/stack/tree/master/images/phpmyadmin/.s2i/bin)
+**Elasticsearch 5.x** compatible with Elastic Suite. [Source for Image](https://github.com/morozov-group/stack/tree/master/images/elasticsearch)
+Includes required modules + russian language analyzer.
+
+**PHPMyAdmin** - here source to Image configuration. [Source2image](https://github.com/morozov-group/stack/tree/master/images/phpmyadmin/.s2i/bin)
