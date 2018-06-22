@@ -24,7 +24,7 @@ Original NFS service to share storage [Here](https://github.com/kubernetes/examp
 
 **Varnish** - 6.0.0 Image config [Source for Image](https://github.com/morozov-group/stack/tree/master/images/varnish)
 
-**PHP 7.1 from Magento 2** - Source to image for Magento is based on following patched verion of image. [Source for Image](https://github.com/morozov-group/s2i-php-container/tree/master/7.1)
+**PHP 7.1 from Magento 2** - Source to image for Magento is based on following patched version of image, with imagemagic, redis, memcached if needed. [Source for Image](https://github.com/morozov-group/s2i-php-container/tree/master/7.1)
 
 **Redis** - session storage and cache storage from docker hub.
 
