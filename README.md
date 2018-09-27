@@ -5,6 +5,11 @@ This repository contains references to everything need to deploy Magento 2 Stack
 ## For Openshift
 
 **SSL offload with HTTP/2** is done by NGINX [Origin router](https://github.com/openshift/origin/tree/master/images/router/nginx)
+Building Nginx Router:
+```
+cd origin/images/router/nginx/ 
+docker build -t openshift/origin-nginx-router:0.1 ./
+```
 
 **ACME SSL certificate automations** are done via  [openshift-acme](https://github.com/tnozicka/openshift-acme/tree/master/deploy/letsencrypt-live/cluster-wide)
 
